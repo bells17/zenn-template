@@ -6,4 +6,5 @@
   "appPort": [
     8000
   ],
+  "postCreateCommand": "apt-get update; apt-get install -y git"
 }
