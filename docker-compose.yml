@@ -1,7 +1,7 @@
 version: '3'
 services:
   zenn:
-    image: ghcr.io/bells17/zenn:0.6.0
+    image: ghcr.io/bells17/zenn:1.0.1
     volumes:
       - ./:/zenn
     ports:
