@@ -18,6 +18,13 @@ This is a template repository for [zenn](https://zenn.dev/).
 4. You can check your articles and books previews  
   ![](https://github.com/bells17/zenn-template/raw/main/docs/images/preview.png)
 
+## Use this devcontainer setting in your existing zenn repository
+
+Copy following files to your zenn repository:
+
+- [.devcontainer.json](https://github.com/bells17/zenn-template/blob/main/.devcontainer.json)
+- [docker-compose.yml](https://github.com/bells17/zenn-template/blob/main/docker-compose.yml)
+
 ## Update image
 
 1. update `Dockerfile`
