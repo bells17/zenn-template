@@ -4,9 +4,11 @@ This is a template repository for [zenn](https://zenn.dev/).
 
 ## Getting Started
 
-1. Select "Use this template" and create your repository.  
+1. Select "Use this template" and create your zenn repository.  
   ![](https://github.com/bells17/zenn-template/raw/main/docs/images/use-this-template.png)
-2. Create a new codespace for the created repository.  
+2. Register your zenn repository to zenn.  
+  ![](https://github.com/bells17/zenn-template/raw/main/docs/images/register-repository.png)
+3. Create a new codespace for the created repository.  
   ![](https://github.com/bells17/zenn-template/raw/main/docs/images/create-new-codespace.png)
 
 ## Write articles or books
