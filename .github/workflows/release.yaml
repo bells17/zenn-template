@@ -7,6 +7,9 @@ jobs:
   release:
     name: "release"
     runs-on: "ubuntu-20.04"
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: "Validate Release Version"
         id: "check_version"
@@ -20,6 +23,12 @@ jobs:
           echo "::set-output name=version::${VERSION}"
           echo "::set-output name=prerelease::${PRERELEASE}"
       - uses: actions/checkout@v2
+      - name: Log in to the Container registry
+        uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - run: make image
       - run: make tag IMAGE_TAG=${{ steps.check_version.outputs.version }}
       - run: make push IMAGE_TAG=${{ steps.check_version.outputs.version }}
