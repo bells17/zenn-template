@@ -3,6 +3,6 @@ services:
   zenn:
     image: ghcr.io/bells17/zenn:1.1.0
     volumes:
-      - ./:/zenn
+      - ../:/zenn
     ports:
       - 8000:8000
