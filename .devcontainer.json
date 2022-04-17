@@ -6,5 +6,5 @@
   "appPort": [
     8000
   ],
-  "postCreateCommand": "apt-get update; apt-get install -y git"
+  "postCreateCommand": "apt-get update; apt-get install -y git; git config --local include.path ../.gitconfig"
 }
