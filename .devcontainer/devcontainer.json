@@ -1,7 +1,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.229.0/containers/codespaces-linux
 {
 	"name": "zenn",
-	"postStartCommand": "git config --global include.path ${localWorkspaceFolder}/.devcontainer/.gitconfig; docker-compose -f ./.devcontainer/docker-compose.yml up -d",
+	"postStartCommand": "git config --global include.path ${containerWorkspaceFolder}/.devcontainer/.gitconfig; docker-compose -f ./.devcontainer/docker-compose.yml up -d",
   "appPort": [
     8000,
   ],
