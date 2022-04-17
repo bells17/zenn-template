@@ -1,5 +1,6 @@
 {
   "name": "zenn",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-21.04",
   "context": "..",
   "dockerComposeFile": "docker-compose.yml",
   "service": "zenn",
