@@ -1,0 +1,14 @@
+name: "Release"
+on:
+  push:
+    tags:
+      - "v*"
+jobs:
+  release:
+    name: "release"
+    runs-on: "ubuntu-20.04"
+    steps:
+      - uses: actions/checkout@v2
+      - run: make image
+      - run: make tag IMAGE_TAG=${{ steps.check_version.outputs.version }}
+      - run: make push IMAGE_TAG=${{ steps.check_version.outputs.version }}
