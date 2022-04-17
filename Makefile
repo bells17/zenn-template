@@ -27,6 +27,10 @@ help: ## Display this help.
 image: ## Build docker image.
 	docker build . -t $(IMAGE_PREFIX)zenn:devel
 
+.PHONY: run
+run: ## Build docker image.
+	docker run -it $(IMAGE_PREFIX)zenn:devel
+
 .PHONY: tag
 tag: ## Set a docker tag to the image.
 	docker tag $(IMAGE_PREFIX)zenn:devel $(IMAGE_PREFIX)zenn:$(IMAGE_TAG)
