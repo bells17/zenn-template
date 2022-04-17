@@ -15,6 +15,8 @@ This is a template repository for [zenn](https://zenn.dev/).
 2. Write your articles or books.
 3. Access to http://localhost:8000 or forwarded port  
   ![](https://github.com/bells17/zenn-template/raw/main/docs/images/port-forward.png)
+4. You can check your articles and books previews  
+  ![](https://github.com/bells17/zenn-template/raw/main/docs/images/preview.png)
 
 ## Update image
 
